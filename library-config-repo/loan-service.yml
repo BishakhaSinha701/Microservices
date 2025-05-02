@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: loan-service
+    name: loan-service2
 
 eureka:
   client:
