@@ -1,9 +1,18 @@
 server:
-  port: 8081
+  port: 8082
 
 spring:
   application:
-    name: book-service2
+    name: book-service
+  datasource:
+    url: jdbc:h2:mem:booksdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 eureka:
   client:
